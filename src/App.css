@@ -1,38 +1,58 @@
-.App {
+html {
+  background-color: #EDF2FB;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.titles {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  margin: 70px 0 0 15px;
+  color: #1b1b1b;
+}
+
+.titles .accentColor {
+  margin-top: 10px;
+  color: #75C9C8;
+}
+
+.about {
+  margin: 75px 0;
+  padding: 10px 15px 100px 15px;
+  background-color: #ABC4FF;
+  color: #1b1b1b;
+}
+
+.about h2 {
   text-align: center;
+  font-size: 1.3rem;
+  padding: 20px 0 25px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about p {
+  font-family: 'Hind Madurai', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about .resume-btn {
+  font-family: 'Hind Madurai', sans-serif;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 25px);
+          transform: translate(-50%, 25px);
+  padding: 7px 25px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about .resume-btn:active {
+  background-color: #75C9C8;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=app.css.map */
