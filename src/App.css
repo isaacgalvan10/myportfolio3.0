@@ -1,16 +1,17 @@
 html {
-  background-color: #EDF2FB;
+  background-color: #30475E;
 }
 
 .container {
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .titles {
   font-family: 'Montserrat', sans-serif;
   font-size: .8rem;
   margin: 70px 0 0 15px;
-  color: #1b1b1b;
+  color: #EDF2FB;
 }
 
 .titles .accentColor {
@@ -18,24 +19,25 @@ html {
   color: #75C9C8;
 }
 
-.about {
-  margin: 75px 0;
+#about-section {
+  margin: 75px 0 50px 0;
   padding: 10px 15px 100px 15px;
   background-color: #ABC4FF;
   color: #1b1b1b;
 }
 
-.about h2 {
+#about-section h2 {
   text-align: center;
   font-size: 1.3rem;
   padding: 20px 0 25px 0;
 }
 
-.about p {
+#about-section p {
   font-family: 'Hind Madurai', sans-serif;
 }
 
-.about .resume-btn {
+#about-section .resume-btn {
+  background-color: #EDF2FB;
   font-family: 'Hind Madurai', sans-serif;
   margin: 0;
   position: absolute;
@@ -46,13 +48,71 @@ html {
   border: none;
   border-radius: 50px;
   outline: none;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
 }
 
-.about .resume-btn:active {
+#about-section .resume-btn:active {
   background-color: #75C9C8;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+#project-section {
+  margin-bottom: 50px;
+}
+
+#project-section h2 {
+  color: #EDF2FB;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#project-section .project-left img {
+  margin: 50px auto 40px auto;
+  height: 400px;
+  min-width: 320px;
+}
+
+#project-section .project-left .sub-title {
+  color: #EDF2FB;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+#project-section .project-left p {
+  color: #EDF2FB;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  max-width: 500px;
+}
+
+#project-section .project-btns {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#project-section .project-btns button {
+  background-color: #ABC4FF;
+  font-family: 'Hind Madurai', sans-serif;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+#project-section .project-btns button:active {
+  background-color: #75C9C8;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+#project-section .project-btns .live-btn {
+  margin-right: 35px;
 }
 /*# sourceMappingURL=app.css.map */
