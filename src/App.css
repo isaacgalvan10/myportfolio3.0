@@ -34,6 +34,7 @@ html {
 
 #about-section p {
   font-family: 'Hind Madurai', sans-serif;
+  max-width: 850px;
 }
 
 #about-section .resume-btn {
@@ -56,10 +57,6 @@ html {
   background-color: #75C9C8;
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
-}
-
-#project-section {
-  margin-bottom: 50px;
 }
 
 #project-section h2 {
@@ -114,5 +111,41 @@ html {
 
 #project-section .project-btns .live-btn {
   margin-right: 35px;
+}
+
+#contact-section {
+  margin: 50px 0 30px 0;
+  padding: 20px 0 25px 0;
+  background-color: #ABC4FF;
+  text-align: center;
+  color: #1b1b1b;
+}
+
+#contact-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+#contact-section p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  color: #75C9C8;
+}
+
+footer a {
+  color: #75C9C8;
+  font-size: 3rem;
+}
+
+footer .github {
+  margin-right: 25px;
+}
+
+footer p {
+  margin-top: 25px;
 }
 /*# sourceMappingURL=app.css.map */

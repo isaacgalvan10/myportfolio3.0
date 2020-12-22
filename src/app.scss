@@ -39,6 +39,7 @@ html {
 
   p {
     font-family: 'Hind Madurai', sans-serif;
+    max-width: 850px;
   }
 
   .resume-btn {
@@ -63,7 +64,6 @@ html {
 }
 
 #project-section {
-  margin-bottom: 50px;
   h2 {
     color: $white;
     text-align: center;
@@ -115,5 +115,41 @@ html {
     .live-btn {
       margin-right: 35px;
     }
+  }
+}
+
+#contact-section {
+  margin: 50px 0 30px 0;
+  padding: 20px 0 25px 0;
+  background-color: $bg-purple;
+  text-align: center;
+  color: $black;
+  
+  h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+
+  p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+}
+
+footer {
+  text-align: center;
+  color: $accent-color;
+
+  a {
+    color: $accent-color;
+    font-size: 3rem;
+  }
+
+  .github {
+    margin-right: 25px;
+  }
+  
+  p {
+    margin-top: 25px;
   }
 }
