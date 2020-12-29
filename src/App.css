@@ -1,5 +1,6 @@
 html {
   background-color: #30475E;
+  font-size: 16px;
 }
 
 .container {
@@ -9,8 +10,8 @@ html {
 
 .titles {
   font-family: 'Montserrat', sans-serif;
-  font-size: .8rem;
-  margin: 70px 0 0 15px;
+  font-size: .85rem;
+  margin: 80px 0 0 20px;
   color: #EDF2FB;
 }
 
@@ -20,7 +21,7 @@ html {
 }
 
 #about-section {
-  margin: 75px 0 50px 0;
+  margin: 95px 0 50px 0;
   padding: 10px 15px 100px 15px;
   background-color: #ABC4FF;
   color: #1b1b1b;
@@ -35,6 +36,7 @@ html {
 #about-section p {
   font-family: 'Hind Madurai', sans-serif;
   max-width: 850px;
+  margin: 0 auto;
 }
 
 #about-section .resume-btn {
@@ -53,10 +55,15 @@ html {
   transition: background-color .5s;
 }
 
-#about-section .resume-btn:active {
+#about-section .resume-btn:hover {
+  cursor: pointer;
   background-color: #75C9C8;
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
+}
+
+#project-section {
+  margin: 0 auto;
 }
 
 #project-section h2 {
@@ -65,13 +72,24 @@ html {
   font-size: 1.3rem;
 }
 
-#project-section .project-left img {
+#project-section .project-left img, #project-section .project-right img {
   margin: 50px auto 40px auto;
   height: 400px;
-  min-width: 320px;
+  width: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-#project-section .project-left .sub-title {
+#project-section .project-left img:hover, #project-section .project-right img:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: #1b1b1b;
+  opacity: 50%;
+}
+
+#project-section .project-left .sub-title, #project-section .project-right .sub-title {
   color: #EDF2FB;
   text-align: center;
   font-weight: 600;
@@ -79,7 +97,7 @@ html {
   margin-bottom: 25px;
 }
 
-#project-section .project-left p {
+#project-section .project-left p, #project-section .project-right p {
   color: #EDF2FB;
   margin: 0 auto;
   padding: 0 15px;
@@ -103,7 +121,8 @@ html {
   transition: background-color .5s;
 }
 
-#project-section .project-btns button:active {
+#project-section .project-btns button:hover {
+  cursor: pointer;
   background-color: #75C9C8;
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
@@ -122,13 +141,27 @@ html {
 }
 
 #contact-section h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 1.3rem;
 }
 
-#contact-section p {
+#contact-section .email {
+  margin-bottom: 15px;
+}
+
+#contact-section a {
+  color: #1b1b1b;
+  text-decoration: none;
   margin-bottom: 5px;
   font-weight: bold;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+#contact-section a:hover {
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  color: #EDF2FB;
 }
 
 footer {
@@ -139,6 +172,14 @@ footer {
 footer a {
   color: #75C9C8;
   font-size: 3rem;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+footer a:hover {
+  color: #ABC4FF;
+  -webkit-transition: color .2s;
+  transition: color .2s;
 }
 
 footer .github {
@@ -147,5 +188,106 @@ footer .github {
 
 footer p {
   margin-top: 25px;
+}
+
+@media all and (min-width: 760px) {
+  html {
+    font-size: 18px;
+  }
+  .titles {
+    font-size: 1.2rem;
+    margin: 100px 0 90px 15%;
+  }
+  #project-section .project-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #project-section .project-left .img-container {
+    margin: 50px 5% 0 auto;
+  }
+  #project-section .project-left img {
+    height: 450px;
+    min-width: 320px;
+  }
+  #project-section .project-left .content {
+    margin: 0 auto 0 0;
+  }
+  #project-section .project-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #project-section .project-right .img-container {
+    margin: 50px auto 0 5%;
+  }
+  #project-section .project-right img {
+    height: 450px;
+    min-width: 320px;
+  }
+  #project-section .project-right .content {
+    margin: 0 0 0 auto;
+  }
+  #contact-section {
+    padding: 25px 0 25px 0;
+  }
+  #contact-section h2 {
+    font-size: 1.3rem;
+  }
+  #contact-section p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+}
+
+@media all and (min-width: 1250px) {
+  .titles {
+    margin: 100px 0 90px 20%;
+  }
+  #project-section .project-left img {
+    margin: 50px 7% 40px auto;
+    height: 450px;
+  }
+  #project-section .project-left .content {
+    margin: 0 auto 0 0;
+  }
+  #project-section .project-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #project-section .project-right img {
+    margin: 50px auto 40px 7%;
+    height: 450px;
+  }
+  #project-section .project-right .content {
+    margin: 0 0 0 auto;
+  }
 }
 /*# sourceMappingURL=app.css.map */

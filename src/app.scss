@@ -6,6 +6,7 @@ $white: #EDF2FB;
 
 html {
   background-color: $bg-color;
+  font-size: 16px;
 }
 
 .container {
@@ -15,8 +16,8 @@ html {
 
 .titles {
   font-family: 'Montserrat', sans-serif;
-  font-size: .8rem;
-  margin: 70px 0 0 15px;
+  font-size: .85rem;
+  margin: 80px 0 0 20px;
   color: $white;
 
   .accentColor {
@@ -26,7 +27,7 @@ html {
 }
 
 #about-section {
-  margin: 75px 0 50px 0;
+  margin: 95px 0 50px 0;
   padding: 10px 15px 100px 15px;
   background-color: $bg-purple;
   color: $black;
@@ -40,6 +41,7 @@ html {
   p {
     font-family: 'Hind Madurai', sans-serif;
     max-width: 850px;
+    margin: 0 auto;
   }
 
   .resume-btn {
@@ -56,7 +58,8 @@ html {
     outline: none;
     transition: background-color .5s;
 
-    &:active{
+    &:hover{
+      cursor: pointer;
       background-color: $accent-color;
       transition: background-color .2s;
     }
@@ -64,17 +67,26 @@ html {
 }
 
 #project-section {
+  margin: 0 auto;
   h2 {
     color: $white;
     text-align: center;
     font-size: 1.3rem;
   }
 
-  .project-left {
+  .project-left, .project-right {
     img {
       margin: 50px auto 40px auto;
       height: 400px;
-      min-width: 320px;
+      width: 320px;
+      object-fit: cover;
+      transition: all .5s;
+
+      &:hover {
+        transition: all .2s;
+        background-color: $black;
+        opacity: 50%;
+      }
     }
     .sub-title {
       color: $white;
@@ -106,7 +118,8 @@ html {
       outline: none;
       transition: background-color .5s;
   
-      &:active{
+      &:hover{
+        cursor: pointer;
         background-color: $accent-color;
         transition: background-color .2s;
       }
@@ -126,13 +139,25 @@ html {
   color: $black;
   
   h2 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 1.3rem;
   }
 
-  p {
+  .email {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
     margin-bottom: 5px;
     font-weight: bold;
+    transition: color .5s;
+
+    &:hover {
+      transition: color .2s;
+      color: $white;
+    }
   }
 }
 
@@ -143,13 +168,120 @@ footer {
   a {
     color: $accent-color;
     font-size: 3rem;
+    transition: color .5s;
+
+    &:hover {
+      color: $bg-purple;
+      transition: color .2s;
+    }
   }
 
   .github {
     margin-right: 25px;
+
   }
   
   p {
     margin-top: 25px;
+  }
+}
+
+@media all and (min-width: 760px) {
+  html {
+    font-size: 18px;
+  }
+
+  .titles {
+    font-size: 1.2rem;
+    margin: 100px 0 90px 15%;
+  }
+
+  #project-section {
+    .project-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .img-container {
+        margin: 50px 5% 0 auto;
+      }
+
+      img {
+        height: 450px;
+        min-width: 320px;
+      }  
+
+      .content {
+        margin: 0 auto 0 0;
+      }
+    }
+    .project-right {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+
+      .img-container {
+        margin: 50px auto 0 5%;
+      }
+
+      img {
+        height: 450px;
+        min-width: 320px;
+      }
+
+      .content {
+        margin: 0 0 0 auto;
+      }
+  
+    }
+  }
+
+  #contact-section {
+    padding: 25px 0 25px 0;
+    
+    h2 {
+      font-size: 1.3rem;
+    }
+  
+    p {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media all and (min-width: 1250px) {
+  .titles {
+    margin: 100px 0 90px 20%;
+  }
+
+  #project-section {
+    .project-left {
+      img {
+        margin: 50px 7% 40px auto;
+        height: 450px;
+      }  
+
+      .content {
+        margin: 0 auto 0 0;
+      }
+    }
+    .project-right {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin: 50px auto 40px 7%;
+        height: 450px;
+      }
+
+      .content {
+        margin: 0 0 0 auto;
+      }
+  
+    }
   }
 }
