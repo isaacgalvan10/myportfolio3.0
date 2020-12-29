@@ -67,7 +67,7 @@ html {
 }
 
 #project-section {
-  margin: 0 auto;
+  margin: 0 auto 150px auto;
   h2 {
     color: $white;
     text-align: center;
@@ -84,7 +84,6 @@ html {
 
       &:hover {
         transition: all .2s;
-        background-color: $black;
         opacity: 50%;
       }
     }
@@ -196,11 +195,23 @@ footer {
     margin: 100px 0 90px 15%;
   }
 
+  #about-section {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
   #project-section {
+    h2 {
+      font-size: 1.5rem;
+    }
+    margin-bottom: 200px;
+
     .project-left {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-bottom: -70px;
 
       .img-container {
         margin: 50px 5% 0 auto;
@@ -220,6 +231,7 @@ footer {
       flex-direction: row-reverse;
       align-items: center;
       justify-content: center;
+      margin-bottom: -70px;
 
       .img-container {
         margin: 50px auto 0 5%;
@@ -241,7 +253,7 @@ footer {
     padding: 25px 0 25px 0;
     
     h2 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   
     p {

@@ -4,6 +4,8 @@ import project1 from './imgs/Easybank-project.png';
 import project2 from './imgs/react-saleswhale.png';
 import project3 from './imgs/social-dashboard-sm2.png';
 import project4 from './imgs/faq-accordion-card.png';
+import project5 from './imgs/form-project-sm2.png';
+import project6 from './imgs/myportfolio2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -32,9 +34,9 @@ function App() {
             <p className="sub-title">Easybank Project</p>
             <p>This is a static website that I remade from a front end challenge. I used React, SASS, and GSAP. Here is the design</p>
             <div className="project-btns">
-            <a href="https://easybank-ig.netlify.app/" target="blank"><button className="live-btn">View Live</button></a>
-            <a href="https://github.com/isaacgalvan10/react-easybank" target="blank"><button className="code-btn">View Code</button></a>
-          </div>
+              <a href="https://easybank-ig.netlify.app/" target="blank"><button className="live-btn">View Live</button></a>
+              <a href="https://github.com/isaacgalvan10/react-easybank" target="blank"><button className="code-btn">View Code</button></a>
+            </div>
           </div>
         </div>
         <div className="project-right">
@@ -47,12 +49,27 @@ function App() {
             <p className="sub-title">Saleswhale Website</p>
             <p>This is a static business website that I remade from a Figma Design. I used React, SASS, Bootstrap, and GSAP. Here is the figma design</p>
             <div className="project-btns">
-            <a href="https://react-saleswhale-isaacg.netlify.app/" target="blank"><button className="live-btn">View Live</button></a>
-            <a href="https://github.com/isaacgalvan10/React-Saleswhale" target="blank"><button className="code-btn">View Code</button></a>
-          </div>
+              <a href="https://react-saleswhale-isaacg.netlify.app/" target="blank"><button className="live-btn">View Live</button></a>
+              <a href="https://github.com/isaacgalvan10/React-Saleswhale" target="blank"><button className="code-btn">View Code</button></a>
+            </div>
           </div>
         </div>
         <div className="project-left">
+          <div className="img-container">
+            <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank">
+              <img src={project6} alt="My portfolio project"/>
+            </a>
+          </div>
+          <div className="content">
+            <p className="sub-title">My Portfolio</p>
+            <p>This is my portoflio website, I designed and developed this site using React, SASS, and GSAP.</p>
+            <div className="project-btns">
+              <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank"><button className="live-btn">View Live</button></a>
+              <a href="https://github.com/isaacgalvan10/client-side-from-validation.io" target="blank"><button className="code-btn">View Code</button></a>
+            </div>
+          </div>
+        </div>
+        <div className="project-right">
           <div className="img-container">
             <a href="https://ig-social-media-dashboard.netlify.app/" target="blank">
               <img src={project3} alt="Easybank Project"/>
@@ -60,26 +77,41 @@ function App() {
           </div>
           <div className="content">
             <p className="sub-title">Social Media Dashboard Project</p>
-            <p>This is a frontend challenge from frontendmentor.io. I built this using Javascript, React, and SASS</p>
+            <p>This is a frontend challenge from frontendmentor. I built this using Javascript, React, and SASS</p>
             <div className="project-btns">
-            <a href="https://ig-social-media-dashboard.netlify.app/" target="blank"><button className="live-btn">View Live</button></a>
-            <a href="https://github.com/isaacgalvan10/social-media-dashboard" target="blank"><button className="code-btn">View Code</button></a>
-          </div>
+              <a href="https://ig-social-media-dashboard.netlify.app/" target="blank"><button className="live-btn">View Live</button></a>
+              <a href="https://github.com/isaacgalvan10/social-media-dashboard" target="blank"><button className="code-btn">View Code</button></a>
+            </div>
           </div>
         </div>
-        <div className="project-right">
+        <div className="project-left">
           <div className="img-container">
             <a href="https://isaacgalvan10.github.io/faq-accordion-card.io/" target="blank">
               <img src={project4} alt="SalesWhale Project"/>
             </a>
           </div>
           <div className="content">
-            <p className="sub-title">Saleswhale Website</p>
-            <p>This is a static business website that I remade from a Figma Design. I used React, SASS, Bootstrap, and GSAP. Here is the figma design</p>
+            <p className="sub-title">FAQ Accordion Card</p>
+            <p>This is a frontend challenge from frontendmentor. Built with SASS and Javascript</p>
             <div className="project-btns">
-            <a href="https://isaacgalvan10.github.io/faq-accordion-card.io/" target="blank"><button className="live-btn">View Live</button></a>
-            <a href="https://github.com/isaacgalvan10/faq-accordion-card.io" target="blank"><button className="code-btn">View Code</button></a>
+              <a href="https://isaacgalvan10.github.io/faq-accordion-card.io/" target="blank"><button className="live-btn">View Live</button></a>
+              <a href="https://github.com/isaacgalvan10/faq-accordion-card.io" target="blank"><button className="code-btn">View Code</button></a>
+            </div>
           </div>
+        </div>
+        <div className="project-right">
+          <div className="img-container">
+            <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank">
+              <img src={project5} alt="Easybank Project"/>
+            </a>
+          </div>
+          <div className="content">
+            <p className="sub-title">Client Side Form Validation</p>
+            <p>This is a frontend challenge from frontendmentor. Built with SCSS and Javascript</p>
+            <div className="project-btns">
+              <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank"><button className="live-btn">View Live</button></a>
+              <a href="https://github.com/isaacgalvan10/client-side-from-validation.io" target="blank"><button className="code-btn">View Code</button></a>
+            </div>
           </div>
         </div>
       </div>

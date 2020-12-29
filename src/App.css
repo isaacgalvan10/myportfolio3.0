@@ -63,7 +63,7 @@ html {
 }
 
 #project-section {
-  margin: 0 auto;
+  margin: 0 auto 150px auto;
 }
 
 #project-section h2 {
@@ -85,7 +85,6 @@ html {
 #project-section .project-left img:hover, #project-section .project-right img:hover {
   -webkit-transition: all .2s;
   transition: all .2s;
-  background-color: #1b1b1b;
   opacity: 50%;
 }
 
@@ -198,6 +197,15 @@ footer p {
     font-size: 1.2rem;
     margin: 100px 0 90px 15%;
   }
+  #about-section h2 {
+    font-size: 1.5rem;
+  }
+  #project-section {
+    margin-bottom: 200px;
+  }
+  #project-section h2 {
+    font-size: 1.5rem;
+  }
   #project-section .project-left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -208,6 +216,7 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: -70px;
   }
   #project-section .project-left .img-container {
     margin: 50px 5% 0 auto;
@@ -233,6 +242,7 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: -70px;
   }
   #project-section .project-right .img-container {
     margin: 50px auto 0 5%;
@@ -248,7 +258,7 @@ footer p {
     padding: 25px 0 25px 0;
   }
   #contact-section h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   #contact-section p {
     margin-bottom: 5px;
