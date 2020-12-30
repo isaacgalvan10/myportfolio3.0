@@ -1,5 +1,5 @@
-import './reset.css';
-import './app.css';
+import './css/reset.css';
+import './css/app.css';
 import project1 from './imgs/Easybank-project.png';
 import project2 from './imgs/react-saleswhale.png';
 import project3 from './imgs/social-dashboard-sm2.png';
