@@ -24,7 +24,7 @@ function App() {
       </div>
       <div id="project-section">
         <h2>My Projects</h2>
-        <div className="project-left">
+        <div className="project-left project-1">
           <div className="img-container">
             <a href="https://easybank-ig.netlify.app/" target="blank">
               <img src={project1} alt="Easybank Project"/>
@@ -39,7 +39,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="project-right">
+        <div className="project-right project-2">
           <div className="img-container">
             <a href="https://react-saleswhale-isaacg.netlify.app/" target="blank">
               <img src={project2} alt="SalesWhale Project"/>
@@ -54,7 +54,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="project-left">
+        <div className="project-left project-3">
           <div className="img-container">
             <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank">
               <img src={project6} alt="My portfolio project"/>
@@ -69,7 +69,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="project-right">
+        <div className="project-right project-4">
           <div className="img-container">
             <a href="https://ig-social-media-dashboard.netlify.app/" target="blank">
               <img src={project3} alt="Social Media Dashboard Project"/>
@@ -84,7 +84,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="project-left">
+        <div className="project-left project-5">
           <div className="img-container">
             <a href="https://isaacgalvan10.github.io/faq-accordion-card.io/" target="blank">
               <img src={project4} alt="FAQ Accordion Card"/>
@@ -99,7 +99,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="project-right">
+        <div className="project-right project-6">
           <div className="img-container">
             <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank">
               <img src={project5} alt="Client Side Form Validation"/>
@@ -116,9 +116,9 @@ function App() {
         </div>
       </div>
         <div id="contact-section">
-          <h2>Contact Me</h2>
-          <a href="mailto:galvan1522@gmail.com"><p className="email">galvan1522@gmail.com</p></a>
-          <a href="tel:+2108846564"><p>(210)884-6564</p></a>
+          <h2 className="contact-animation">Contact Me</h2>
+          <a href="mailto:galvan1522@gmail.com"><p className="email contact-animation">galvan1522@gmail.com</p></a>
+          <a href="tel:+2108846564"><p className="contact-animation">(210)884-6564</p></a>
         </div>
         <footer>
         <a className="github" href="https://github.com/isaacgalvan10" target="blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithubSquare} /></a>
