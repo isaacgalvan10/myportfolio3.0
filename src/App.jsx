@@ -18,9 +18,9 @@ function App() {
         <h1 className="accentColor">Frontend Developer</h1>
       </div>
       <div id="about-section">
-        <h2>About Me</h2>
-        <p>From the ﬁrst "Hello World" I coded, I knew I was hooked into the amazing world of programming. Software development is more than a job to me, it has offered me a great way to continually learn and improve my skills. What started with a simple "Hello World" has become a full-ﬂedged passion that only gets more exciting as time goes by.  </p>
-        <a href="https://docs.google.com/document/d/1qql3RqjUkrPjJ-RWvTVawlUaWfb869-Kiryz2RZ6-u8/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="resume-btn">View Resume</button></a>
+        <h2 className="about-animation">About Me</h2>
+        <p className="about-animation">From the ﬁrst "Hello World" I coded, I knew I was hooked into the amazing world of programming. Software development is more than a job to me, it has offered me a great way to continually learn and improve my skills. What started with a simple "Hello World" has become a full-ﬂedged passion that only gets more exciting as time goes by.  </p>
+        <a className="about-animation" href="https://docs.google.com/document/d/1qql3RqjUkrPjJ-RWvTVawlUaWfb869-Kiryz2RZ6-u8/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="resume-btn">View Resume</button></a>
       </div>
       <div id="project-section">
         <h2>My Projects</h2>
@@ -65,14 +65,14 @@ function App() {
             <p>This is my portoflio website, I designed and developed this site using React, SASS, and GSAP.</p>
             <div className="project-btns">
               <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank"><button className="live-btn">View Live</button></a>
-              <a href="https://github.com/isaacgalvan10/client-side-from-validation.io" target="blank"><button className="code-btn">View Code</button></a>
+              <a href="https://github.com/isaacgalvan10/myportfolio3.0" target="blank"><button className="code-btn">View Code</button></a>
             </div>
           </div>
         </div>
         <div className="project-right">
           <div className="img-container">
             <a href="https://ig-social-media-dashboard.netlify.app/" target="blank">
-              <img src={project3} alt="Easybank Project"/>
+              <img src={project3} alt="Social Media Dashboard Project"/>
             </a>
           </div>
           <div className="content">
@@ -87,7 +87,7 @@ function App() {
         <div className="project-left">
           <div className="img-container">
             <a href="https://isaacgalvan10.github.io/faq-accordion-card.io/" target="blank">
-              <img src={project4} alt="SalesWhale Project"/>
+              <img src={project4} alt="FAQ Accordion Card"/>
             </a>
           </div>
           <div className="content">
@@ -102,7 +102,7 @@ function App() {
         <div className="project-right">
           <div className="img-container">
             <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank">
-              <img src={project5} alt="Easybank Project"/>
+              <img src={project5} alt="Client Side Form Validation"/>
             </a>
           </div>
           <div className="content">
