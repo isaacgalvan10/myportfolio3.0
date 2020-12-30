@@ -56,7 +56,7 @@ function App() {
         </div>
         <div className="project-left project-3">
           <div className="img-container">
-            <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank">
+            <a href="https://isaacgalvan.netlify.app/" target="blank">
               <img src={project6} alt="My portfolio project"/>
             </a>
           </div>
@@ -64,7 +64,7 @@ function App() {
             <p className="sub-title">My Portfolio</p>
             <p>This is my portoflio website, I designed and developed this site using React, SASS, and GSAP.</p>
             <div className="project-btns">
-              <a href="https://isaacgalvan10.github.io/client-side-from-validation.io/" target="blank"><button className="live-btn">View Live</button></a>
+              <a href="https://isaacgalvan.netlify.app/" target="blank"><button className="live-btn">View Live</button></a>
               <a href="https://github.com/isaacgalvan10/myportfolio3.0" target="blank"><button className="code-btn">View Code</button></a>
             </div>
           </div>
