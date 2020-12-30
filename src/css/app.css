@@ -85,7 +85,7 @@ html {
 #project-section .project-left img:hover, #project-section .project-right img:hover {
   -webkit-transition: all .2s;
   transition: all .2s;
-  opacity: 70%;
+  opacity: 90%;
 }
 
 #project-section .project-left .sub-title, #project-section .project-right .sub-title {
