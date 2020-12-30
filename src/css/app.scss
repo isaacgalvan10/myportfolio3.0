@@ -84,7 +84,7 @@ html {
 
       &:hover {
         transition: all .2s;
-        opacity: 90%;
+        filter: opacity(50%);
       }
     }
     .sub-title {
