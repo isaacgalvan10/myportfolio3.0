@@ -32,7 +32,7 @@ function App() {
           </div>
           <div className="content">
             <p className="sub-title">Easybank Project</p>
-            <p>This is a static website that I remade from a front end challenge. I used React, SASS, and GSAP. Here is the design</p>
+            <p>This is a front end challenge from frontendmentor.io. I built this using React, SASS, and GSAP.</p>
             <div className="project-btns">
               <a href="https://easybank-ig.netlify.app/" target="blank"><button className="live-btn">View Live</button></a>
               <a href="https://github.com/isaacgalvan10/react-easybank" target="blank"><button className="code-btn">View Code</button></a>
@@ -47,7 +47,7 @@ function App() {
           </div>
           <div className="content">
             <p className="sub-title">Saleswhale Website</p>
-            <p>This is a static business website that I remade from a Figma Design. I used React, SASS, Bootstrap, and GSAP. Here is the figma design</p>
+            <p>This is a static business website that I remade from a Figma Design. I used React, SASS, Bootstrap, and GSAP.</p>
             <div className="project-btns">
               <a href="https://react-saleswhale-isaacg.netlify.app/" target="blank"><button className="live-btn">View Live</button></a>
               <a href="https://github.com/isaacgalvan10/React-Saleswhale" target="blank"><button className="code-btn">View Code</button></a>
